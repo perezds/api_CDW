@@ -1,16 +1,18 @@
 from pydantic import BaseModel
+from schemas.mundos import MundoMagicoResponse  
 
 class WinxBase(BaseModel):
     nome: str
-    poder: str
-    planeta_origem: str
+    poder_principal: str
     transformacao_favorita: str
+    planeta_origem: str
 
 class WinxCreate(WinxBase):
-    pass
+    mundo_id: int  
 
 class WinxOut(WinxBase):
     id: int
+    mundo: MundoMagicoResponse  
 
     class Config:
         orm_mode = True
