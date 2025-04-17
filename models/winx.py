@@ -1,3 +1,4 @@
+# models/winx.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from core.database import Base
@@ -12,4 +13,4 @@ class Winx(Base):
     transformacao_favorita = Column(String)
     mundo_id = Column(Integer, ForeignKey("mundos_magicos.id"))
 
-    mundo = relationship("MundoMagico", back_populates="fadas")
+    mundo = relationship("MundoMagico", back_populates="winx")  
