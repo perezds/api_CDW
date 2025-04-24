@@ -1,16 +1,22 @@
 from fastapi import FastAPI
-from core.configs import settings
-from api.v1.api import api_router
+from api.v1 import api
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="API NBA Players")
+app = FastAPI(title="API Winx ✨")
 
-origins = ["http://localhost", "http://localhost:8080", "http://127.0.0.1:5500"]
+app.include_router(api.api_router, prefix="/api/v1")
 
-app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app = FastAPI()
 
-app.include_router(api_router, prefix=settings.API_V1_STR)
 
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, log_level="info", reload=True)
+origins = [
+    "http://localhost:5173",  
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
