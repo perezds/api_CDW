@@ -4,6 +4,7 @@ class TransformacaoBase(BaseModel):
     nome: str
     descricao: str | None = None
     nivel_magico: str | None = None
+    winx_id: int
 
 class TransformacaoCreate(TransformacaoBase):
     pass

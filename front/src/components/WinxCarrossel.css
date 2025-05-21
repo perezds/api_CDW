@@ -1,0 +1,62 @@
+.carousel-page {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #ffe6f0, #e0f7ff);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.carousel-title {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3rem;
+  color: #8e44ad;
+  margin-bottom: 10px;
+}
+
+.carousel-subtitle {
+  font-size: 1.2rem;
+  color: #6c3483;
+  margin-bottom: 30px;
+}
+
+.carousel-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.fada-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  padding: 15px;
+  width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.fada-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.fada-img-container {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fada-img-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.fada-card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #5d2d91;
+}

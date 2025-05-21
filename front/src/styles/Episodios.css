@@ -1,0 +1,59 @@
+.episodios-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .episodios-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .episodios-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.episodio-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.episodio-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.episodio-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: #6200ea;
+}
+
+.episodio-info {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.2rem 0;
+}
+
+.episodio-sinopse {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  color: #888;
+}

@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #ffe4f4, #d9f2ff);
+  overflow-x: hidden;
+}
+
+.winx-header {
+  background: linear-gradient(to right, #ffb6e6, #dab6ff);
+  padding: 1rem 2rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.winx-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #70007a;
+}
+
+.winx-header nav a {
+  margin: 0 1rem;
+  color: #4d0070;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.fada-card {
+  background: #111;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 160px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fada-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff69b4;
+}
+
+.fada-card img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fada-card h3 {
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.2rem;
+}

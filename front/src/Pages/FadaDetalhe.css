@@ -1,0 +1,23 @@
+.fada-detalhe-container {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, #f9a8d4, #a78bfa);
+    color: white;
+    gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .fada-detalhe-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  .fada-detalhe-container .info {
+    max-width: 600px;
+  }
+  
