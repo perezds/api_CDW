@@ -8,7 +8,11 @@ const FadaDetalhe = () => {
   const [fada, setFada] = useState(null);
 
   useEffect(() => {
+<<<<<<< HEAD
     axios.get(`http://127.0.0.1:8000/fada/${nome}`)
+=======
+    axios.get(`http://localhost:8000/fada/${nome}`)
+>>>>>>> d152c127a6bb0676f6709e6d1d9cd40e9bcb3eed
       .then((response) => {
         setFada(response.data);
       })
